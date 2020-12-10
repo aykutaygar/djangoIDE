@@ -1,39 +1,39 @@
 .topnav {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: seagreen;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: seagreen;
+  overflow: hidden;
+}
 
-  .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
   float: left;
@@ -60,9 +60,22 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  animation: fadeEffect 1s;
+  /* Fading effect takes 1 second */
 }
+
 @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {
+    opacity: 0;
   }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#videoElement {
+  width: 640px;
+  height: 480px;
+  background-color: #666;
+}

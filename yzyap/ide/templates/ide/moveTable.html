@@ -1,0 +1,90 @@
+<div class="card" style="width: 100%;">
+    <div class="card-body" style="background-color: seagreen;">
+        <table border=2 style="background-color: red; width: 100%; empty-cells: hide;">
+            <tr>
+                <th>ROBOT HAREKETLERİ</th>
+                <th>KAMERA HAREKETLERİ</th>
+            </tr>
+            <tr>
+                <td>
+                    <table style="empty-cells: hide;">
+                        <tr>
+                            <input type="text" name="AdimBoyu" id='AdimBoyu' value="0.001" style="width: 75%;">
+                            <!--<button type='button' name="adimBoyuGonder" id='adimBoyuGonder'>Send</button>-->
+                            <a href="#" class="btn btn-primary">Send</a>
+
+                        </tr>
+                        <th>ADIM</th>
+                        <th>HIZ</th>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="Adim" id='Adim' value="30" style="width: 50%;"></td>
+                            <td><input type="text" name="Hiz" id='Hiz' value="200" style="width: 50%;"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table style="empty-cells: hide;">
+                        <tr>
+                            <input type="text" name="AciAdim" id='AciAdim' value="10">
+                        </tr>
+                        <tr>
+                            <th>TILT</th>
+                            <th>PAN</th>
+                        </tr>
+                        <tr>
+                            <td><output name="TiltAci" id='TiltAci'></output</td> <td><output name="PanAci"
+                                        id='PanAci'></output></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <table style="empty-cells: hide;">
+                        <tr>
+                            <td></td>
+                            <td><a href="#" class="btn btn-primary">İleri</a></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="btn btn-primary">Sol</a></td>
+                            <td><a href="#" class="btn btn-primary">Dur</a></td>
+                            <td><a href="#" class="btn btn-primary">Sağ</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a href="#" class="btn btn-primary">Geri</a></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+                <td align="center">
+                    <table style="empty-cells: hide;">
+                        <tr>
+                            <!--<td></td><td><button type='button' id='camyukari' width=75px onclick="TiltAci.value=parseInt(TiltAci.value)+parseInt(AciAdim.value)">Yukarı</button></td><td></td>-->
+                            <td></td>
+                            <td><a href="#" class="btn btn-primary">Yukarı</a></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                            <!--<td><button type='button' id='camsol' width=75px onclick="PanAci.value=parseInt(PanAci.value)-parseInt(AciAdim.value)">Sol</button></td>-->
+                            <td><a href="#" class="btn btn-primary">Sol</a></td>
+                            <!--<td><button type='button' id='cammerkez' width=75px onclick="PanAci.value=0;TiltAci.value=0">Merkez</button></td>-->
+                            <td><a href="#" class="btn btn-primary">Merkez</a></td>
+                            <!--<td><button type='button' id='camsag' width=75px onclick="PanAci.value=parseInt(PanAci.value)+parseInt(AciAdim.value)">Sağ</button></td>-->
+                            <td><a href="#" class="btn btn-primary">Sağ</a></td>
+                        </tr>
+                        <tr>
+                            <!--<td></td><td><button type='button' id='camasagi' width=75px onclick="TiltAci.value=parseInt(TiltAci.value)-parseInt(AciAdim.value)">Aşağı</button></td><td></td>-->
+                            <td></td>
+                            <td><a href="#" class="btn btn-primary">Aşağı</a></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>

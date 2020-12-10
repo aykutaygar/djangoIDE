@@ -1,0 +1,38 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YZYap IDE</title>
+
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/codemirror.css">
+    <link rel="stylesheet" href="../../static/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../static/css/adminlte.min.css">
+    {% block stylesheet %}{% endblock %}
+</head>
+
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="../../static/js/codemirror.js"></script>
+    <script src="../../static/js/blockly/blockly_compressed.js"></script>
+    <script src="../../static/js/blockly/blocks_compressed.js"></script>
+    <script src="../../static/js/blockly/javascript_compressed.js"></script>
+    <script src="../../static/js/blockly/python_compressed.js"></script>
+    <script src="../../static/js/en.js"></script>
+    <script src="../../static/js/jquery.min.js"></script>
+    <script src="../../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../../static/js/adminlte.min.js"></script>
+    <script src="../../static/js/app.js"></script>
+    {% block javascript %}{% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<div class="col-lg">
+    <div class="card" style="width: 100%; height: 100%;">
+      <div class="card-header">
+        <button class="tablinks" onclick="openCity(event, 'London')">Code</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Blockly</button>
+        <button onclick="saveTextAsFile()">Download File</button>
+        <a id="runCodeSnippetButton" href="#" class="btn btn-primary float-sm-right">Çalıştır</a>
+        <a href="#" class="btn btn-primary float-sm-right">Durdur</a>
+      </div>
+      <div class="card-body">
+        <textarea name="myTextarea" id="myTextarea" cols="10" rows="10"></textarea>
+
+        <p id='consoleLogArea'>kod çıktısı</p>
+      </div>
+      <div class="tab">
+
+      </div>
+
+      <!-- Tab content -->
+      <div id="London" class="tabcontent">
+
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <p>
+          <button onclick="showCode()">Show JavaScript</button>
+          <button onclick="runCode()">Run JavaScript</button>
+        </p>
+
+        {% include "ide/blockly.html" %}
+      </div>
+
+    </div>
+
+
+  </div>
